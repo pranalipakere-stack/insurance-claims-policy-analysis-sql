@@ -72,3 +72,43 @@ where p1.sum_insured >(
 select avg(p2.sum_insured)
 from policies p2 
 where p2.line = p1.line);
+#Q14.Find the number of policies according to their renewal outcome.
+select term_outcome,
+count(policy_number) as number_of_policies
+from policies
+group by term_outcome;
+#Q15.Find the top five towns based on the number of policyholders.
+select town,count(*) as number_of_policyholders
+from policyholders
+group by town
+order by number_of_policyholders desc limit 5;
+#Q16.Display each adjuster's name and the number of claims they have handled, 
+#including adjusters who have handled zero claims.
+select a.first_name,a.last_name,count(c.status)
+from adjusters a 
+left join claims c 
+on a.id = c.adjuster_id
+group by a.id,a.first_name,a.last_name;
+#Q17.Find customers whose total annual 
+#premium across all their policies is greater than €3,000.
+select holder_id,sum(annual_premium) as total_annual_premium
+from policies 
+group by holder_id
+having total_annual_premium > 3000;
+#Q18.Find all claims where the settled amount is less than the claimed amount.
+select claim_number,claimed_amount, settled_amount
+from claims 
+where settled_amount < claimed_amount;
+#Q19.Generate a sequence of numbers from 1 to 12 using SQL.
+with recursive countdown as(
+select 1 as num
+union all
+select num + 1
+from countdown
+where num < 12)
+select * from countdown;
+#Q20.Find the business line with the highest average annual premium.
+select line,avg(annual_premium) as average_premium 
+from policies
+group by line
+order by average_premium desc limit 1;
