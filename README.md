@@ -1,45 +1,95 @@
 # Insurance Claims & Policy Analysis using SQL
 
-## Project Overview
-This project focuses on analysing insurance data using SQL and MySQL Workbench. The dataset contains information about policyholders, insurance policies, claims and adjusters.
+## 📌 Project Overview
 
-The objective is to solve practical business questions and develop SQL problem-solving skills through real-world-style data analysis.
+This project focuses on analysing insurance policies, policyholders, insurance claims, and adjuster information using SQL and MySQL Workbench.
 
-## Dataset
-The project uses four CSV files:
+The project consists of 20 practical SQL questions designed to explore insurance data, solve business-related problems, and generate meaningful insights.
 
-- `policyholders.csv`
-- `policies.csv`
-- `claims.csv`
-- `adjusters.csv`
+## 🎯 Project Objectives
 
-## Tools Used
+- Analyse insurance policies and policyholder information.
+- Examine insurance claims and settlement patterns.
+- Identify policyholders with multiple insurance policies.
+- Analyse premium amounts across different business lines.
+- Evaluate claim-handling performance by adjusters.
+- Explore customer and policy trends using SQL.
+
+## 📂 Dataset
+
+The project uses four CSV files containing synthetic insurance data.
+
+| File Name | Description |
+|---|---|
+| `policyholders.csv` | Policyholder details |
+| `policies.csv` | Insurance policy information |
+| `claims.csv` | Insurance claim records |
+| `adjusters.csv` | Insurance adjuster details |
+
+**Dataset Name:** Insurance Claims Processing, Policy Details and Loss Metrics
+
+**Currency:** Euro (€)
+
+## 🛠️ Tools & Technologies
+
 - MySQL
 - MySQL Workbench
 - SQL
+- CSV datasets
+- GitHub
 
-## SQL Concepts Practised
+## 📚 SQL Concepts Used
+
 - SELECT and WHERE
+- Filtering and comparison operators
 - Aggregate Functions
-- INNER JOIN and LEFT JOIN
-- Multi-table JOINs
 - GROUP BY and HAVING
+- ORDER BY and LIMIT
+- INNER JOIN and LEFT JOIN
+- Multiple-table JOINs
 - Subqueries
 - Correlated Subqueries
+- Common Table Expressions (CTEs)
+- Recursive CTEs
 - Date Functions
+- UNION
 
-## Project Progress
+## 📊 Project Analysis
 
-**13 out of 30 SQL questions completed.**
+This project contains **20 SQL questions** covering the following areas:
 
-The remaining questions will be added as the project progresses.
+1. Policyholder Analysis
+2. Insurance Policy Analysis
+3. Premium Analysis
+4. Claims Analysis
+5. Claim Settlement Analysis
+6. Adjuster Performance Analysis
+7. Business-Line Analysis
+8. Customer-Level Analysis
 
-## Project Goals
-- Analyse insurance policies and claims.
-- Identify policyholder behaviour.
-- Examine claim settlement patterns.
-- Compare insurance business lines.
-- Practise solving business problems using SQL.
+## 📁 Project Structure
 
-## Disclaimer
-This is a self-learning SQL practice project using a synthetic insurance dataset. It is not a real-world client project.
+```text
+insurance-claims-policy-analysis-sql/
+│
+├── dataset/
+│   ├── policyholders.csv
+│   ├── policies.csv
+│   ├── claims.csv
+│   └── adjusters.csv
+│
+├── sql/
+│   └── insurance_analysis.sql
+│
+├── screenshots/
+│
+└── README.md
+```
+
+## ⚠️ Disclaimer
+
+This is a self-learning SQL project developed using a synthetic insurance dataset. The data does not represent actual customers, insurance companies, or real insurance transactions.
+
+## 👩‍💻 Author
+
+Created as part of my learning journey in SQL and Data Analytics.
